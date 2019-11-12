@@ -18,9 +18,9 @@ C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\P
 C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(215,16): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(216,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(218,1): warning C4244: '+=': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(356,21): warning C4305: '+=': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(360,21): warning C4305: '-=': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(367,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(370,35): warning C4244: 'argument': conversion from 'GLfloat' to 'int', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(370,21): warning C4244: 'argument': conversion from 'GLfloat' to 'int', possible loss of data
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(356,22): warning C4305: '+=': truncation from 'double' to 'GLfloat'
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(362,22): warning C4305: '-=': truncation from 'double' to 'GLfloat'
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(369,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(372,35): warning C4244: 'argument': conversion from 'GLfloat' to 'int', possible loss of data
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(372,21): warning C4244: 'argument': conversion from 'GLfloat' to 'int', possible loss of data
   Project1.vcxproj -> C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Debug\Domino Smash.exe

@@ -74,8 +74,8 @@ Domino a[5] =
 {
 Domino(5,4),
 Domino(5, 5.5),
-Domino(5, 7),
-Domino(5, 8.5 )
+Domino(8, 7),
+Domino(10, 8.5 )
 };
 
 
@@ -352,13 +352,15 @@ void SpecialKeys(int key, int x, int y) {
 	}
 	if (key == GLUT_KEY_LEFT) {
 		//bola.cx -= 0.1;
-		
-		mira.angulo += 0.1;
+		if (mira.shoot == 0) {
+			mira.angulo += 0.1;
+		}
 	}
 	if (key == GLUT_KEY_RIGHT) {
 		//bola.cx += 0.1;
-		mira.angulo -= 0.1;
-		
+		if (mira.shoot == 0) {
+			mira.angulo -= 0.1;
+		}
 	}
 	glutPostRedisplay();
 }
