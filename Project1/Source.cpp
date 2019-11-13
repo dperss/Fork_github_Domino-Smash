@@ -1,9 +1,22 @@
 ﻿#include<stdio.h>
 #include <GL/glut.h>
 #include<math.h> 
-#define pi 3.142857 
+#include <string>
+
+#define MENUPB "resources/MENU FINAL.png" // done
+#define CONTROLPB "resources/trabalho cg regras.png" // done
+
+#define pi 3.14159265f
+
+
+using namespace std;
 
 GLfloat windowHeight = 500, windowWidth = 500 ;
+GLint nivel=1;
+
+
+GLint Veloctity = 0;
+
 
 class Caixadojogo {
 public:
@@ -70,12 +83,19 @@ class Domino
 
 };
 
-Domino a[5] =
+Domino a[11] =
 {
 Domino(5,4),
 Domino(5, 5.5),
-Domino(8, 7),
-Domino(10, 8.5 )
+Domino(5, 7),
+Domino(5, 8.5),
+Domino(5, 10),
+Domino(6.1,10),
+Domino(7.2,10),
+Domino(8.3, 10),
+Domino(9.4,10),
+Domino(10.5,10),
+Domino(10.5,8.5),
 };
 
 
@@ -138,7 +158,7 @@ class Shoot {
 	GLfloat x, y;
 	GLfloat directionx = 1;
 	GLfloat directiony = 1;
-	GLfloat Veloctity = 3;
+	
 
 	void Mira()// dispara a bola
 	{
@@ -171,6 +191,7 @@ class Shoot {
 		if ( cx>=x && cx<=x+1 && cy>=y && cy<=y+1.4) {
 			directionx = -directionx/2;
 			directiony = -directiony/2;
+			Veloctity *= 0;
 	
 		}
 	}
@@ -231,9 +252,108 @@ public:
 
 Caixa_obstaculo box(10,3);
 
+void escreve(int width, int height, float x, float y, void* font, string texto) {//largura, altura e posição da caixa de texto
+	float xxx = (float)x;
+	float yyy = (float)y;
+	glColor3f(1, 1, 0);
+	glRasterPos2f(xxx, yyy);
+	for (int i = 0; i < texto.length(); i++) {
+		glutBitmapCharacter(font, texto.at(i));
+	}
+}
+
+
+class menu_caixa{
+public:
+	GLfloat menux = 8, menuy = 2;
+	string s;
+
+	menu_caixa() {
+
+	}
+
+	menu_caixa(GLfloat menux, GLfloat menuy,string s) {
+		this->menux = menux;
+		this->menuy = menuy;
+		this-> s = s;
+	}
+	void draw_menu_caixa() {
+		glColor3f(1, 0, 0);
+		glBegin(GL_QUADS);
+		glVertex2f(menux, menuy + 2);
+		glVertex2f(menux, menuy);
+		glVertex2f(menux + 4, menuy);
+		glVertex2f(menux + 4, menuy + 2);
+		glEnd();
+		escreve(10, 10, menux+0.5, menuy+1, GLUT_BITMAP_TIMES_ROMAN_24, s);
+	}
 
 
 
+};
+
+menu_caixa caixas[7] =
+{
+menu_caixa(8,2,"Exit"),
+menu_caixa(8, 5,"Nivel 4"),
+menu_caixa(8, 8,"Nivel 3"),
+menu_caixa(8, 11,"Nivel 2"),
+menu_caixa(8, 14,"Nivel 1"),
+};
+
+
+
+
+void menu() {
+	std::string s = std::to_string(Veloctity);
+	std::string ni = std::to_string(nivel);
+
+	switch (nivel)
+	{
+	case 1://menu
+		caixa.DrawCaixa();
+		escreve(10, 10, 7, 18, GLUT_BITMAP_TIMES_ROMAN_24, "Domino Smash");
+		for (int i=0; i < 5; i++) {
+			caixas[i].draw_menu_caixa();
+		}
+		
+
+
+		break;
+	case 2://Nivel 1
+
+
+		caixa.DrawCaixa();
+		mira.Hit_box_Caixa_obstaculo(box.x, box.y, bola.cx, bola.cy);	//AS hitboxes tenhem que aparecer sempre depois do draw senão da erros
+		mira.Hit_box(bola.cx, bola.cy);
+		mira.Mira();
+
+		for (int i = 0; i < 4; i++) {
+			mira.Hit_box_domino(a[i].x, a[i].y, bola.cx, bola.cy);
+			a[i].DrawDomino();
+			a[i].Domino_Compare(a[i - 1].x, a[i - 1].y);
+			a[i].Domino_Compare(bola.cx, bola.cy);
+		}
+
+		box.Drawcaixa_obstaculo();
+		
+		escreve(10, 10, 10, 18, GLUT_BITMAP_TIMES_ROMAN_24, "Domino Smash");
+		escreve(10, 10, 1, 18, GLUT_BITMAP_TIMES_ROMAN_24, "Nivel:"+ni);
+		escreve(10, 10, 1, 17, GLUT_BITMAP_TIMES_ROMAN_24, "Potencia:"+s);
+
+		bola.DrawCircle();
+		break;
+
+	case 3:
+		break;
+	case 4:
+		break;
+
+	default:
+		break;
+	}
+
+}
 void display(void)
 {	
 	
@@ -249,25 +369,8 @@ void display(void)
 	glLoadIdentity();
 	gluOrtho2D(0, 20, 0, 20);
 	
-	caixa.DrawCaixa();
-	mira.Hit_box_Caixa_obstaculo(box.x, box.y, bola.cx, bola.cy);	//AS hitboxes tenhem que aparecer sempre depois do draw senão da erros
-	mira.Hit_box(bola.cx, bola.cy);
-	mira.Mira();
-
-	for (int i = 0; i < 4; i++) {
-		mira.Hit_box_domino(a[i].x, a[i].y, bola.cx, bola.cy);
-		a[i].DrawDomino();
-		a[i].Domino_Compare(a[i-1].x, a[i - 1].y);
-		a[i].Domino_Compare(bola.cx, bola.cy);		
-	}
+	menu();
 	
-	box.Drawcaixa_obstaculo();
-	
-
-	bola.DrawCircle();
-	
-	
-
 	
 	glutPostRedisplay();
 	glFlush(); //despeja imgs da memoria para o ecran
@@ -306,7 +409,7 @@ void ChangeSize(GLsizei w, GLsizei h)
 	}
 
 	// Set the clipping volume
-	glOrtho(0.0f, windowWidth, 0.0f, windowHeight, 1.0f, -1.0f);
+	//glOrtho(0.0f, windowWidth, 0.0f, windowHeight, 1.0f, -1.0f);
 	//gluOrtho2D(-10, 10, -10, 10);
 
 	glMatrixMode(GL_MODELVIEW);
@@ -322,7 +425,7 @@ void ChangeSize(GLsizei w, GLsizei h)
 		mira.shoot = 1;
 		break;
 	case 27://fechar o jogo
-		exit(1);
+		nivel=1;
 		break;
 	}
 	glutPostRedisplay();
@@ -343,12 +446,14 @@ void SpecialKeys(int key, int x, int y) {
 
 
 	if (key == GLUT_KEY_UP) {
-		//bola.cy += 0.1;
-		mira.shoot = 1;
+		if (mira.shoot == 0) {
+			Veloctity = Veloctity + 1;
+		}
 	}
 	if (key == GLUT_KEY_DOWN) {
-		//bola.cy -= 0.1;
-		mira.shoot = 0;
+		if (mira.shoot == 0) {
+			Veloctity = Veloctity - 1;
+		}
 	}
 	if (key == GLUT_KEY_LEFT) {
 		//bola.cx -= 0.1;
@@ -365,6 +470,38 @@ void SpecialKeys(int key, int x, int y) {
 	glutPostRedisplay();
 }
 
+
+void HandleMouse(int button, int state, int x, int y) {
+	
+	GLfloat xx, yy;
+
+	xx = (x * 10) / windowWidth;
+	yy = (y * 10) / windowHeight;
+	
+	
+	if (button == GLUT_LEFT_BUTTON)
+		if (state == GLUT_UP) {
+			
+
+			if (xx>=8 && xx<= 14 && yy>=16 && yy<=18) {
+				exit(1);
+			}
+			if (xx >= 8 && xx <= 14 && yy >= 13 && yy <= 15) {
+				nivel = 4;
+			}
+			if (xx >= 8 && xx <= 14 && yy >= 10 && yy <= 12) {
+				nivel = 3;
+			}
+			if (xx >= 8 && xx <= 14 && yy >= 7 && yy <= 9) {
+				nivel = 2;
+			}
+			if (xx >= 8 && xx <= 14 && yy >= 4 && yy <= 6) {
+				nivel = 1;
+			}
+		
+		}
+}
+
 void main(int argc, char** argv)
 {
 	glutInit(&argc, argv); 
@@ -375,7 +512,9 @@ void main(int argc, char** argv)
 	glutReshapeFunc(ChangeSize);	
 	glutKeyboardFunc(HandleKeyboard);  
 	glutSpecialFunc(SpecialKeys); 
-	//glutMouseFunc(HandleMouse);
+	glutMouseFunc(HandleMouse);
 	SetupRC();
+	
 	glutMainLoop();
 }
+

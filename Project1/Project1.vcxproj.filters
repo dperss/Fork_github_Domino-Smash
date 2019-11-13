@@ -15,6 +15,14 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <Image Include="resources\MENU FINAL.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\trabalho cg regras.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

@@ -19,6 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <Image Include="resources\MENU FINAL.png" />
+    <Image Include="resources\trabalho cg regras.png" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

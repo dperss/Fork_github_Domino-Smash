@@ -1,26 +1,31 @@
 ﻿  Source.cpp
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(49,20): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(49,17): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(49,14): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(53,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(54,20): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(94,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(145,10): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(146,10): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(149,1): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(157,1): warning C4244: '+=': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(158,1): warning C4244: '+=': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(211,19): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(211,16): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(211,13): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(214,16): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(215,25): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(215,16): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(216,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(218,1): warning C4244: '+=': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(356,22): warning C4305: '+=': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(362,22): warning C4305: '-=': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(369,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(372,35): warning C4244: 'argument': conversion from 'GLfloat' to 'int', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Project1\Source.cpp(372,21): warning C4244: 'argument': conversion from 'GLfloat' to 'int', possible loss of data
-  Project1.vcxproj -> C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\Domino Smash\Debug\Domino Smash.exe
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(62,20): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(62,17): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(62,14): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(66,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(67,20): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(93,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(94,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(95,15): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(96,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(165,10): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(166,10): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(169,1): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(177,1): warning C4244: '+=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(178,1): warning C4244: '+=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(232,19): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(232,16): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(232,13): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(235,16): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(236,25): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(236,16): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(237,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(239,1): warning C4244: '+=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(260,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(288,24): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(461,22): warning C4305: '+=': truncation from 'double' to 'GLfloat'
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(467,22): warning C4305: '-=': truncation from 'double' to 'GLfloat'
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(506,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(509,35): warning C4244: 'argument': conversion from 'GLfloat' to 'int', possible loss of data
+C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(509,21): warning C4244: 'argument': conversion from 'GLfloat' to 'int', possible loss of data
+  Project1.vcxproj -> C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Debug\Domino Smash.exe
