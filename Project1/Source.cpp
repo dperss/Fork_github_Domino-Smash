@@ -12,7 +12,7 @@
 using namespace std;
 
 GLfloat windowHeight = 500, windowWidth = 500 ;
-GLint nivel=1;
+GLint nivel=0;
 
 
 GLint Veloctity = 0;
@@ -96,6 +96,22 @@ Domino(8.3, 10),
 Domino(9.4,10),
 Domino(10.5,10),
 Domino(10.5,8.5),
+};
+
+Domino b[11] =
+{
+Domino(5,4),
+
+};
+Domino c[11] =
+{
+Domino(5,4),
+
+};
+Domino d[11] =
+{
+Domino(5,4),
+
 };
 
 
@@ -310,17 +326,14 @@ void menu() {
 
 	switch (nivel)
 	{
-	case 1://menu
+	case 0://menu
 		caixa.DrawCaixa();
 		escreve(10, 10, 7, 18, GLUT_BITMAP_TIMES_ROMAN_24, "Domino Smash");
 		for (int i=0; i < 5; i++) {
 			caixas[i].draw_menu_caixa();
 		}
-		
-
-
 		break;
-	case 2://Nivel 1
+	case 1://Nivel 1
 
 
 		caixa.DrawCaixa();
@@ -328,7 +341,7 @@ void menu() {
 		mira.Hit_box(bola.cx, bola.cy);
 		mira.Mira();
 
-		for (int i = 0; i < 4; i++) {
+		for (int i = 0; i < 11; i++) {
 			mira.Hit_box_domino(a[i].x, a[i].y, bola.cx, bola.cy);
 			a[i].DrawDomino();
 			a[i].Domino_Compare(a[i - 1].x, a[i - 1].y);
@@ -344,6 +357,14 @@ void menu() {
 		bola.DrawCircle();
 		break;
 
+	case 2:
+
+
+
+
+
+
+		break;
 	case 3:
 		break;
 	case 4:
@@ -375,8 +396,6 @@ void display(void)
 	glutPostRedisplay();
 	glFlush(); //despeja imgs da memoria para o ecran
 }
-
-
 
 void SetupRC(void)
 {
@@ -425,23 +444,12 @@ void ChangeSize(GLsizei w, GLsizei h)
 		mira.shoot = 1;
 		break;
 	case 27://fechar o jogo
-		nivel=1;
+		nivel=0;
 		break;
 	}
 	glutPostRedisplay();
 }
 
- /*
-void HandleMouse(int button, int state, int x, int y) {
-	if (button == GLUT_LEFT_BUTTON)
-		if (state == GLUT_DOWN) {
-			xf = ((2 * win * x) / view_w) - win;
-			yf = (((2 * win) * (y - view_h)) / -view_h) - win;
-		}
-
-	glutPostRedisplay();
-}
-*/
 void SpecialKeys(int key, int x, int y) {
 
 
@@ -470,7 +478,6 @@ void SpecialKeys(int key, int x, int y) {
 	glutPostRedisplay();
 }
 
-
 void HandleMouse(int button, int state, int x, int y) {
 	
 	GLfloat xx, yy;
@@ -478,8 +485,8 @@ void HandleMouse(int button, int state, int x, int y) {
 	xx = (x * 10) / windowWidth;
 	yy = (y * 10) / windowHeight;
 	
-	
 	if (button == GLUT_LEFT_BUTTON)
+
 		if (state == GLUT_UP) {
 			
 
