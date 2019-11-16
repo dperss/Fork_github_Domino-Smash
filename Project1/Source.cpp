@@ -116,41 +116,44 @@ Domino(10.5,8.5,2),
 
 Domino b[12] =
 {
-Domino(16,5,4),
-Domino(14.9,5,4),
-Domino(13.8, 5,4),
-Domino(12.7, 5,4),
-Domino(11.6, 5,4),
-Domino(10.5,5,4),
-Domino(9.4,5,1),
+Domino(16,7,4),
+Domino(14.9,7,4),
+Domino(13.8, 7,4),
+Domino(12.7, 7,4),
+Domino(11.6, 7,4),
+Domino(10.5,7,4),
 Domino(9.4,7,1),
 Domino(9.4,9,1),
-Domino(9.4,11,4),
-Domino(8.3,11,4),
-Domino(7.2,11,4),
+Domino(9.4,11,1),
+Domino(9.4,13,4),
+Domino(8.3,13,4),
+Domino(7.2,13,4),
 };
 
-Domino c[9] =
+Domino c[12] =
 {
-Domino(5,4,1),
-Domino(5, 5.5,1),
-Domino(5, 7,1),
-Domino(5, 8.5,1),
-Domino(5, 10,3),
-Domino(6.1,10,3),
-Domino(7.2,10,3),
-Domino(8.3, 10,3),
+Domino(4,5,1),
+Domino(4.5, 7,1),
+Domino(5, 9,1),
+Domino(5.5, 11,1),
+Domino(6.7, 11,3),
+Domino(7.9,11,3),
+Domino(9,11,3),
+Domino(10.2, 11,3),
+Domino(11.4, 11,3),
+Domino(12.5, 11,3),
+Domino(13,9,1),
+Domino(13.5, 7,1),
 };
 
-Domino d[7] =
+Domino d[6] =
 {
-Domino(5,4,1),
-Domino(5, 5.5,1),
-Domino(5, 7,1),
-Domino(5, 8.5,1),
-Domino(5, 10,3),
-Domino(6.1,10,3),
-Domino(7.2,10,3),
+Domino(13,7,1),
+Domino(12.5,8.5,1),
+Domino(12,10,1),
+Domino(11.5,11.5,1),
+Domino(10.3, 11.7,3),
+Domino(9, 12,3),
 };
 
 
@@ -246,7 +249,7 @@ class Shoot {
 		if ( cx>=x && cx<=x+1 && cy>=y && cy<=y+1.4) {
 			directionx = -directionx/2;
 			directiony = -directiony/2;
-			Veloctity *= 0;
+			Veloctity = 0;
 	
 		}
 	}
@@ -259,6 +262,13 @@ class Shoot {
 			Veloctity *= 2;
 		}
 		
+	}
+
+	void Hitbox_triangulo(GLfloat x, GLfloat y, GLfloat cx, GLfloat cy) {
+		if (cx >= x && cx <= x + 2 && cy >= y && cy <= y + 1) {
+			directionx = -directionx / 2;
+			directiony = -directiony / 2;
+		}
 	}
 
 
@@ -307,29 +317,51 @@ public:
 };
 
 Caixa_obstaculo box(10,3);
+Caixa_obstaculo box_c(10, 3);
 
 class reta_obsaculo {
 public:
-	GLfloat x, y;
+	GLfloat x, y,x2;
 
 	reta_obsaculo() {
 
 	}
-	reta_obsaculo(GLfloat x, GLfloat y) {
+	reta_obsaculo(GLfloat x, GLfloat y,GLfloat x2) {
 		this->x = x;
 		this->y = y;
+		this->x2 = x2;
 	}
 	void draw_reta_obsaculo() {
 		glColor3f(1, 0, 0);
 		glBegin(GL_QUADS);
 		glVertex2f(x, y);
-		glVertex2f(x + 1.4, y);
-		glVertex2f(x + 1.4, y + 0.5);
+		glVertex2f(x + x2, y);
+		glVertex2f(x + x2, y + 0.5);
 		glVertex2f(x, y + 0.5);
+		glEnd();
+	}
+	void draw_reta_obsaculo_angulo() {
+		GLfloat xx = x + 10 * cos(90);
+		GLfloat yy = y + 10 * sin(90);
+
+		glColor3f(1, 0, 0);
+		glBegin(GL_QUADS);
+		glVertex2f(x, y);
+		glVertex2f(x+1, y);
+		glVertex2f(xx+1 , yy+0.5);
+		glVertex2f(xx, yy+0.5);
 		glEnd();
 	}
 
 };
+
+reta_obsaculo reta_b[2] =
+{
+reta_obsaculo(8,5,8),
+reta_obsaculo(6.5,5.5,8),
+};
+
+
 
 class triangulo_obsaculo {
 public:
@@ -353,17 +385,25 @@ public:
 		glVertex2f(x + 1, y + 2);
 		glEnd();
 	}
-
-	void Hitbox_triangulo(GLfloat cx,GLfloat cy) {//acabar
-		if (cx >= x && cx <= x + 2 && cy <= y + 2 && cy >= y) {
-
-		}
-	}
-
 };//acabar//acabar
 
-triangulo_obsaculo tri(5, 5);
-
+triangulo_obsaculo tri_c[5] =
+{
+triangulo_obsaculo(6,5),
+triangulo_obsaculo(11,6),
+triangulo_obsaculo(8,8),
+triangulo_obsaculo(13,4),
+triangulo_obsaculo(15,6),
+};
+triangulo_obsaculo tri_d[6] =
+{
+triangulo_obsaculo(7,5),
+triangulo_obsaculo(9,8),
+triangulo_obsaculo(11,5),
+triangulo_obsaculo(3,5),
+triangulo_obsaculo(1.1,8),
+triangulo_obsaculo(5,8),
+};
 
 void escreve(int width, int height, float x, float y, void* font, string texto) {//largura, altura e posição da caixa de texto
 	float xxx = (float)x;
@@ -422,138 +462,152 @@ void menu() {
 	std::string ni = std::to_string(nivel);
 	std::string po = std::to_string(pontos);
 
-	switch (nivel)
-	{
-	case 0://menu
+	// o swicth tava todo bugado
+	if (nivel == 0) {//menu
 		caixa.DrawCaixa();
 		escreve(10, 10, 7, 18, GLUT_BITMAP_TIMES_ROMAN_24, "Domino Smash");
-		for (int i=0; i < 5; i++) {
+		for (int i = 0; i < 5; i++) {
 			caixas[i].draw_menu_caixa();
 		}
-		break;
-	case 1://Nivel 1
+	}else{
+		if (nivel == 1) {
 
 
-		caixa.DrawCaixa();
-		mira.Hit_box_Caixa_obstaculo(box.x, box.y, bola.cx, bola.cy);	//AS hitboxes tenhem que aparecer sempre depois do draw senão da erros
-		mira.Hit_box(bola.cx, bola.cy);
-		mira.Mira();
 
-		for (int i = 0; i < 11; i++) {
-			mira.Hit_box_domino(a[i].x, a[i].y, bola.cx, bola.cy);
-			a[i].DrawDomino();
-			a[i].Domino_Compare(a[i - 1].x, a[i - 1].y);
-			a[i].Domino_Compare(bola.cx, bola.cy);
+			caixa.DrawCaixa();
+			mira.Hit_box_Caixa_obstaculo(box.x, box.y, bola.cx, bola.cy);	//AS hitboxes tenhem que aparecer sempre depois do draw senão da erros
+			mira.Hit_box(bola.cx, bola.cy);
+			mira.Mira();
+
+			for (int i = 0; i < 11; i++) {
+				mira.Hit_box_domino(a[i].x, a[i].y, bola.cx, bola.cy);
+				a[i].DrawDomino();
+				a[i].Domino_Compare(a[i - 1].x, a[i - 1].y);
+				a[i].Domino_Compare(bola.cx, bola.cy);
+			}
+
+			box.Drawcaixa_obstaculo();
+
+			escreve(10, 10, 7, 18, GLUT_BITMAP_TIMES_ROMAN_24, "Domino Smash");
+			escreve(10, 10, 1, 18, GLUT_BITMAP_TIMES_ROMAN_24, "Nivel:" + ni);
+			escreve(10, 10, 1, 17, GLUT_BITMAP_TIMES_ROMAN_24, "Potencia:" + s);
+			escreve(10, 10, 1, 16, GLUT_BITMAP_TIMES_ROMAN_24, "Pontos:" + po);
+
+			bola.DrawCircle();
+
+			if (pontos == 11) {
+				pontos = 0;
+				nivel = 0;
+			}
 		}
+		else {
+			if (nivel == 2) {
 
-		box.Drawcaixa_obstaculo();
-		
-		escreve(10, 10, 10, 18, GLUT_BITMAP_TIMES_ROMAN_24, "Domino Smash");
-		escreve(10, 10, 1, 18, GLUT_BITMAP_TIMES_ROMAN_24, "Nivel:"+ni);
-		escreve(10, 10, 1, 17, GLUT_BITMAP_TIMES_ROMAN_24, "Potencia:"+s);
-		escreve(10, 10, 1, 16, GLUT_BITMAP_TIMES_ROMAN_24, "Pontos:" + po);
 
-		bola.DrawCircle();
 
-		if (pontos == 11) {
-			pontos = 0;
-			nivel = 0;
+				caixa.DrawCaixa();
+				mira.Hit_box(bola.cx, bola.cy);
+				mira.Mira();
+
+				for (int ii = 0; ii < 12; ii++) {
+					mira.Hit_box_domino(b[ii].x, b[ii].y, bola.cx, bola.cy);
+					b[ii].DrawDomino();
+					b[ii].Domino_Compare(b[ii - 1].x, b[ii - 1].y);
+					b[ii].Domino_Compare(bola.cx, bola.cy);
+				}
+
+				//for (int ii = 0; ii < 2; ii++) {
+					reta_b[0].draw_reta_obsaculo();
+					reta_b[1].draw_reta_obsaculo_angulo();
+				
+
+
+
+				escreve(10, 10, 7, 18, GLUT_BITMAP_TIMES_ROMAN_24, "Domino Smash");
+				escreve(10, 10, 1, 18, GLUT_BITMAP_TIMES_ROMAN_24, "Nivel:" + ni);
+				escreve(10, 10, 1, 17, GLUT_BITMAP_TIMES_ROMAN_24, "Potencia:" + s);
+				escreve(10, 10, 1, 16, GLUT_BITMAP_TIMES_ROMAN_24, "Pontos:" + po);
+
+				bola.DrawCircle();
+
+				if (pontos == 11) {
+					pontos = 0;
+					nivel = 0;
+				}
+
+			}
+			else {
+				if (nivel == 3) {
+
+
+					caixa.DrawCaixa();
+					mira.Hit_box_Caixa_obstaculo(box.x, box.y, bola.cx, bola.cy);	//AS hitboxes tenhem que aparecer sempre depois do draw senão da erros
+					mira.Hit_box(bola.cx, bola.cy);
+					mira.Mira();
+
+					for (int iii = 0; iii < 12; iii++) {
+						mira.Hit_box_domino(c[iii].x, c[iii].y, bola.cx, bola.cy);
+						c[iii].DrawDomino();
+						c[iii].Domino_Compare(c[iii - 1].x, c[iii - 1].y);
+						c[iii].Domino_Compare(bola.cx, bola.cy);
+					}
+
+					for (int iii = 0; iii < 5; iii++) {
+						tri_c[iii].draw_triangulo_obsaculo();
+						mira.Hitbox_triangulo(tri_c[iii].x, tri_c[iii].y, bola.cx, bola.cy);
+					}
+
+					box_c.Drawcaixa_obstaculo();
+
+					escreve(10, 10, 7, 18, GLUT_BITMAP_TIMES_ROMAN_24, "Domino Smash");
+					escreve(10, 10, 1, 18, GLUT_BITMAP_TIMES_ROMAN_24, "Nivel:" + ni);
+					escreve(10, 10, 1, 17, GLUT_BITMAP_TIMES_ROMAN_24, "Potencia:" + s);
+					escreve(10, 10, 1, 16, GLUT_BITMAP_TIMES_ROMAN_24, "Pontos:" + po);
+
+					bola.DrawCircle();
+
+					if (pontos == 12) {
+						pontos = 0;
+						nivel = 0;
+					}
+				}
+				else {
+					if (nivel == 4) {
+
+
+						caixa.DrawCaixa();
+						mira.Hit_box(bola.cx, bola.cy);
+						mira.Mira();
+
+						for (int iiii = 0; iiii < 6; iiii++) {
+							mira.Hit_box_domino(d[iiii].x, d[iiii].y, bola.cx, bola.cy);
+							d[iiii].DrawDomino();
+							d[iiii].Domino_Compare(d[iiii - 1].x, d[iiii - 1].y);
+							d[iiii].Domino_Compare(bola.cx, bola.cy);
+						}
+
+						for (int iiii = 0; iiii < 6; iiii++) {
+							tri_d[iiii].draw_triangulo_obsaculo();
+							mira.Hitbox_triangulo(tri_c[iiii].x, tri_c[iiii].y, bola.cx, bola.cy);
+						}
+
+						
+
+						escreve(10, 10, 7, 18, GLUT_BITMAP_TIMES_ROMAN_24, "Domino Smash");
+						escreve(10, 10, 1, 18, GLUT_BITMAP_TIMES_ROMAN_24, "Nivel:" + ni);
+						escreve(10, 10, 1, 17, GLUT_BITMAP_TIMES_ROMAN_24, "Potencia:" + s);
+						escreve(10, 10, 1, 16, GLUT_BITMAP_TIMES_ROMAN_24, "Pontos:" + po);
+
+						bola.DrawCircle();
+
+						if (pontos == 11) {
+							pontos = 0;
+							nivel = 0;
+						}
+					}
+				}
+			}
 		}
-		break;
-
-	case 2://Nivel 2
-
-		caixa.DrawCaixa();
-		mira.Hit_box_Caixa_obstaculo(box.x, box.y, bola.cx, bola.cy);	//AS hitboxes tenhem que aparecer sempre depois do draw senão da erros
-		mira.Hit_box(bola.cx, bola.cy);
-		mira.Mira();
-
-		for (int i = 0; i < 12; i++) {
-			mira.Hit_box_domino(b[i].x, b[i].y, bola.cx, bola.cy);
-			b[i].DrawDomino();
-			b[i].Domino_Compare(b[i - 1].x, b[i - 1].y);
-			b[i].Domino_Compare(bola.cx, bola.cy);
-		}
-
-		box.Drawcaixa_obstaculo();
-
-		escreve(10, 10, 10, 18, GLUT_BITMAP_TIMES_ROMAN_24, "Domino Smash");
-		escreve(10, 10, 1, 18, GLUT_BITMAP_TIMES_ROMAN_24, "Nivel:" + ni);
-		escreve(10, 10, 1, 17, GLUT_BITMAP_TIMES_ROMAN_24, "Potencia:" + s);
-		escreve(10, 10, 1, 16, GLUT_BITMAP_TIMES_ROMAN_24, "Pontos:" + po);
-
-		bola.DrawCircle();
-
-		if (pontos == 11) {
-			pontos = 0;
-			nivel = 0;
-		}
-		break;
-
-
-
-		break;
-	case 3: // Nivel 3
-
-		caixa.DrawCaixa();
-		mira.Hit_box_Caixa_obstaculo(box.x, box.y, bola.cx, bola.cy);	//AS hitboxes tenhem que aparecer sempre depois do draw senão da erros
-		mira.Hit_box(bola.cx, bola.cy);
-		mira.Mira();
-
-		/*for (int i = 0; i < 11; i++) {
-			mira.Hit_box_domino(a[i].x, a[i].y, bola.cx, bola.cy);
-			c[i].DrawDomino();
-			c[i].Domino_Compare(a[i - 1].x, a[i - 1].y);
-			c[i].Domino_Compare(bola.cx, bola.cy);
-		}*/
-		tri.draw_triangulo_obsaculo();
-		box.Drawcaixa_obstaculo();
-
-		escreve(10, 10, 10, 18, GLUT_BITMAP_TIMES_ROMAN_24, "Domino Smash");
-		escreve(10, 10, 1, 18, GLUT_BITMAP_TIMES_ROMAN_24, "Nivel:" + ni);
-		escreve(10, 10, 1, 17, GLUT_BITMAP_TIMES_ROMAN_24, "Potencia:" + s);
-		escreve(10, 10, 1, 16, GLUT_BITMAP_TIMES_ROMAN_24, "Pontos:" + po);
-
-		bola.DrawCircle();
-
-		if (pontos == 11) {
-			pontos = 0;
-			nivel = 0;
-		}
-		break;
-		break;
-	case 4: //Nivel 4
-
-		caixa.DrawCaixa();
-		mira.Hit_box_Caixa_obstaculo(box.x, box.y, bola.cx, bola.cy);	//AS hitboxes tenhem que aparecer sempre depois do draw senão da erros
-		mira.Hit_box(bola.cx, bola.cy);
-		mira.Mira();
-
-		for (int i = 0; i < 11; i++) {
-			mira.Hit_box_domino(a[i].x, a[i].y, bola.cx, bola.cy);
-			d[i].DrawDomino();
-			d[i].Domino_Compare(a[i - 1].x, a[i - 1].y);
-			d[i].Domino_Compare(bola.cx, bola.cy);
-		}
-
-		box.Drawcaixa_obstaculo();
-
-		escreve(10, 10, 10, 18, GLUT_BITMAP_TIMES_ROMAN_24, "Domino Smash");
-		escreve(10, 10, 1, 18, GLUT_BITMAP_TIMES_ROMAN_24, "Nivel:" + ni);
-		escreve(10, 10, 1, 17, GLUT_BITMAP_TIMES_ROMAN_24, "Potencia:" + s);
-		escreve(10, 10, 1, 16, GLUT_BITMAP_TIMES_ROMAN_24, "Pontos:" + po);
-
-		bola.DrawCircle();
-
-		if (pontos == 11) {
-			pontos = 0;
-			nivel = 0;
-		}
-		break;
-		break;
-
-	default:
-		break;
 	}
 
 }
