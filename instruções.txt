@@ -1,0 +1,10 @@
+Domino Smash
+
+Menu:
+-Escolher o nivel com o rato ou exit para sair
+
+Níveis:
+-Usar as setas para apontar, disparar com a barra de espaços
+-Se atingir a pontuação máxima do nível será mostrada uma mensagem
+-Para resetar o nível pressione a Barra de Espaços
+-Para voltar ao menu principal sem resetar o nível pressione ESC

@@ -19,18 +19,33 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="resources\MENU FINAL.png" />
-    <Image Include="resources\trabalho cg regras.png" />
+    <ClCompile Include="Caixadojogo.cpp" />
+    <ClCompile Include="Caixa_obstaculo.cpp" />
+    <ClCompile Include="Circulo.cpp" />
+    <ClCompile Include="domino-smash.cpp" />
+    <ClCompile Include="Domino.cpp" />
+    <ClCompile Include="GlobalVariables.cpp" />
+    <ClCompile Include="Hitbox.cpp" />
+    <ClCompile Include="Menu_caixa.cpp" />
+    <ClCompile Include="Shoot.cpp" />
+    <ClCompile Include="Triangulo_obstaculo.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp" />
+    <ClInclude Include="Caixadojogo.h" />
+    <ClInclude Include="Caixa_obstaculo.h" />
+    <ClInclude Include="Circulo.h" />
+    <ClInclude Include="Domino.h" />
+    <ClInclude Include="GlobalVariables.h" />
+    <ClInclude Include="Hitbox.h" />
+    <ClInclude Include="Menu_caixa.h" />
+    <ClInclude Include="Shoot.h" />
+    <ClInclude Include="Triangulo_obstaculo.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{78D326AD-7C92-40F2-9CE5-6E6B5174A6F3}</ProjectGuid>
+    <ProjectGuid>{B5B4BD0E-0AB1-4CE4-9825-12DB04F8DD03}</ProjectGuid>
     <RootNamespace>Project1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Domino Smash</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -84,15 +99,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalUsingDirectories>
-      </AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>C:\Users\Diogo Ramos\Documents\freeglut\freeglut\glew-1.11.0\include;C:\Users\Diogo Ramos\Documents\freeglut\freeglut\freeglut\include;%(AdditionalUsingDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Curso\CG\openGL\freeglut\glew-1.11.0\include;C:\Curso\CG\openGL\freeglut\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>C:\Curso\CG\openGL\freeglut\glew-1.11.0\lib;C:\Curso\CG\openGL\freeglut\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>freeglut.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\Diogo Ramos\Documents\freeglut\freeglut\glew-1.11.0\lib;C:\Users\Diogo Ramos\Documents\freeglut\freeglut\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

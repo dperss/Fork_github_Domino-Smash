@@ -1,53 +1,57 @@
-﻿  Source.cpp
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(58,19): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(58,16): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(58,13): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(62,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(63,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(109,16): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(110,16): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(111,17): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(112,17): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(120,16): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(121,17): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(122,17): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(123,17): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(125,15): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(126,15): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(127,16): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(128,16): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(129,16): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(130,16): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(139,17): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(140,16): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(142,18): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(143,18): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(155,20): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(223,10): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(224,10): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(227,1): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(235,1): warning C4244: '+=': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(236,1): warning C4244: '+=': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(298,19): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(298,16): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(298,13): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(301,16): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(302,25): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(302,16): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(303,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(305,1): warning C4244: '+=': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(339,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(340,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(344,14): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(345,14): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(351,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(352,20): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(404,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(413,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(441,24): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(706,22): warning C4305: '+=': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(712,22): warning C4305: '-=': truncation from 'double' to 'GLfloat'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(750,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(753,35): warning C4244: 'argument': conversion from 'GLfloat' to 'int', possible loss of data
-C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Project1\Source.cpp(753,21): warning C4244: 'argument': conversion from 'GLfloat' to 'int', possible loss of data
-  Project1.vcxproj -> C:\Users\Diogo Ramos\Documents\MEGAsync\IPB\3ºAno\1ºSemestre\CG\domino-smash\Debug\Domino Smash.exe
+﻿  domino-smash.cpp
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(49,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(58,15): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(59,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(60,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(63,15): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(64,15): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(65,16): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(66,16): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(67,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(68,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(69,15): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(70,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(78,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(79,15): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(80,15): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(81,15): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(83,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(84,16): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(85,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(86,15): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(87,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(97,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(98,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(99,15): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(109,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(110,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(174,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(175,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(176,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(179,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(180,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(181,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(182,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(183,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(184,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(185,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(186,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(192,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(193,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(194,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(195,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(197,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(198,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(199,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(200,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(201,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(209,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(210,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(211,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(218,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(219,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(243,23): warning C4305: '+=': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(249,23): warning C4305: '-=': truncation from 'double' to 'GLfloat'
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(503,35): warning C4244: 'argument': conversion from 'GLfloat' to 'int', possible loss of data
+C:\Users\migue\source\repos\CG\Project1\domino-smash.cpp(503,21): warning C4244: 'argument': conversion from 'GLfloat' to 'int', possible loss of data
+  Project1.vcxproj -> C:\Users\migue\source\repos\CG\Debug\Project1.exe
